@@ -3,174 +3,184 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#172820">
-  <meta name="description" content="SHIFTNAKE 플레이 안내와 지원 연락처. Google Play 출시 준비 중입니다.">
-  <title>SHIFTNAKE | 플레이 안내와 지원</title>
-<style>
-:root {
-  color-scheme: dark;
-  --forest: #172820;
-  --moss: #263b2d;
-  --paper: #f1f0e8;
-  --soft: #d7dccf;
-  --acid: #c9e66b;
-  --width: 1120px;
-  font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans KR", sans-serif;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--forest); color: var(--paper); font-size: 17px; line-height: 1.65; }
-a { color: var(--acid); text-underline-offset: 4px; }
-a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--acid); outline-offset: 5px; }
-.wrap { width: min(calc(100% - 48px), var(--width)); margin-inline: auto; }
-header { background: var(--forest); }
-.nav { min-height: 76px; display: flex; align-items: center; gap: 30px; }
-.brand { color: var(--paper); font-size: 22px; font-weight: 900; letter-spacing: -.06em; text-decoration: none; }
-.brand span { color: var(--acid); }
-nav { display: flex; gap: 28px; margin-left: auto; }
-nav a { min-height: 44px; display: inline-flex; align-items: center; color: var(--paper); font-size: 15px; text-decoration: none; }
-.language { border: 0; padding: 10px 14px; background: var(--acid); color: var(--forest); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
-.hero { display: grid; grid-template-columns: 1fr .78fr; gap: 54px; align-items: center; padding-block: 70px 76px; }
-h1 { max-width: 720px; margin: 0 0 24px; font-size: clamp(48px, 7.3vw, 88px); letter-spacing: -.075em; line-height: .98; }
-.lead { max-width: 610px; margin: 0 0 22px; color: var(--soft); font-size: clamp(19px, 2vw, 23px); }
-.status { display: inline-block; color: var(--soft); font-size: 16px; font-weight: 500; }
-.actions { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 28px; }
-.actions a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 650; }
-.screen { width: min(100%, 390px); justify-self: center; margin: 0; }
-.screen img { display: block; width: 100%; height: auto; }
-.screen figcaption { margin-top: 13px; color: var(--soft); font-size: 14px; }
-section { scroll-margin-top: 22px; }
-.route-alias { display: block; position: relative; top: -18px; }
-.info { padding-block: 66px; background: var(--moss); }
-.columns { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; align-items: start; }
-h2 { max-width: 580px; margin: 0 0 22px; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -.06em; }
-h3 { margin: 32px 0 8px; font-size: 23px; line-height: 1.25; }
-p { margin: 0 0 16px; }
-p:lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
-.actions a:first-child { padding: 12px 18px; background: var(--acid); color: var(--forest); text-decoration: none; }
-.steps p { padding-block: 14px; color: var(--paper); }
-.steps p + p { margin-top: 12px; }
-.steps strong { color: var(--acid); }
-.help { padding-block: 68px; }
-.help-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; }
-.help p { max-width: 520px; color: var(--soft); }
-.email { display: inline-block; margin-top: 8px; font-size: clamp(21px, 3vw, 29px); font-weight: 700; overflow-wrap: anywhere; }
-.privacy { padding-block: 58px 68px; background: var(--moss); }
-.privacy p, .privacy li { max-width: 850px; color: var(--paper); }
-.privacy details { padding-block: 14px; }
-.privacy summary { cursor: pointer; color: var(--paper); font-size: 20px; font-weight: 700; }
-.privacy ul { padding-left: 24px; }
-footer { padding-block: 28px 36px; color: var(--soft); font-size: 14px; }
-.footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; }
-.en { display: none; }
-body.english .ko { display: none; }
-body.english .en { display: initial; }
-body.english p.en, body.english h1.en, body.english h2.en,
-body.english h3.en, body.english figcaption.en { display: block; }
-body.english a.en { display: inline-flex; }
-body.english li.en { display: list-item; }
-@media (max-width: 760px) {
-  .wrap { width: min(calc(100% - 36px), var(--width)); }
-  .nav { min-height: 66px; flex-wrap: wrap; gap: 8px 14px; padding-block: 9px; }
-  nav { order: 3; width: 100%; gap: 22px; margin: 0; }
-  .hero { grid-template-columns: 1fr; gap: 34px; padding-block: 44px 52px; }
-  h1 { font-size: clamp(40px, 11.5vw, 66px); }
-  .screen { width: min(77%, 330px); }
-  .info, .help, .privacy { padding-block: 48px; }
-  .columns, .help-grid { grid-template-columns: 1fr; gap: 24px; }
-  h2 { font-size: clamp(30px, 9vw, 40px); }
-}
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style>
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#090909">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="SHIFTNAKE Android 1.0.0 지원. 비공개 테스트 Alpha 심사 중. 플레이 방법, 문의, 개인정보.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'; font-src 'none'; object-src 'none'">
+  <title>SHIFTNAKE Android | 지원</title>
+  <link rel="canonical" href="https://sleeplesshan.github.io/">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/app-icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/app-icon-180.png">
+  <meta property="og:title" content="SHIFTNAKE Android 지원">
+  <meta property="og:description" content="버전 1.0.0. 비공개 테스트 Alpha 심사 중. 플레이 방법과 문의.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sleeplesshan.github.io/">
+  <meta property="og:image" content="https://sleeplesshan.github.io/assets/app-icon-512.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://sleeplesshan.github.io/assets/app-icon-512.png">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header><div class="wrap nav">
-  <a class="brand" href="#top" aria-label="SHIFTNAKE home">SHIFT<span>NAKE</span></a>
-  <nav aria-label="Main navigation">
-    <a href="#play"><span class="ko">플레이</span><span class="en">Play</span></a>
-    <a href="#support"><span class="ko">지원</span><span class="en">Support</span></a>
-    <a href="#privacy"><span class="ko">개인정보</span><span class="en">Privacy</span></a>
-  </nav>
-  <button class="language" type="button" aria-label="Switch language">EN</button>
-</div></header>
+<a class="skip" href="#top"><span class="ko">본문으로</span><span class="en">Skip to content</span></a>
+<header>
+  <div class="wrap bar">
+    <a class="brand logo-plate" href="#top">
+      <img class="icon" src="assets/app-icon-192.png" width="192" height="192" alt="">
+      <img class="mark" src="assets/title-wordmark-v1.png" width="1024" height="160" alt="SHIFTNAKE">
+    </a>
+    <nav data-nav aria-label="본문 탐색">
+      <a href="#play"><span class="ko">플레이</span><span class="en">Play</span></a>
+      <a href="#support"><span class="ko">지원</span><span class="en">Support</span></a>
+      <a href="#privacy"><span class="ko">개인정보</span><span class="en">Privacy</span></a>
+    </nav>
+    <button class="language" type="button" lang="en" aria-label="View in English">EN</button>
+  </div>
+</header>
 <main id="top">
-<span class="route-alias" id="home-ko"></span><span class="route-alias" id="home-en"></span>
-<section class="wrap hero">
-  <div>
-    <h1 class="ko">길이 바뀐다.<br>뱀은 달린다.</h1>
-    <h1 class="en">Keep moving.<br>Find your way.</h1>
-    <p class="lead ko">SHIFTNAKE는 움직이는 발판을 따라 뱀을 조종하는 모바일 게임입니다. CLAIM 모드에서는 몸통으로 영역을 둘러 점유합니다.</p>
-    <p class="lead en">SHIFTNAKE is a mobile snake game played across shifting tiles. In CLAIM mode, draw loops with your trail to claim territory.</p>
-    <p><span class="status ko">Google Play 출시 준비 중</span><span class="status en">Preparing for Google Play</span></p>
-    <div class="actions"><a href="#play"><span class="ko">두 가지 모드 안내</span><span class="en">Explore the two modes</span></a><a href="#support"><span class="ko">문의 방법</span><span class="en">Contact support</span></a></div>
-  </div>
-  <figure class="screen"><img src="assets/shift-gameplay.jpg" width="640" height="1055" alt="SHIFT 모드 실제 플레이 화면"><figcaption class="ko">SHIFT 모드 플레이 화면</figcaption><figcaption class="en">Gameplay from SHIFT mode</figcaption></figure>
-</section>
-<section class="info" id="play"><div class="wrap columns">
-  <div><h2 class="ko">길을 읽고<br>계속 움직이세요.</h2><h2 class="en">Read the path.<br>Keep moving.</h2><p class="ko">플레이 조작과 두 모드의 목표를 간단히 소개합니다.</p><p class="en">A quick guide to controls and the goals of both modes.</p></div>
-  <div class="steps">
-    <p><strong class="ko">SHIFT</strong><strong class="en">SHIFT</strong><br><span class="ko">화면 왼쪽이나 오른쪽을 눌러 뱀의 진행 방향을 바꾸세요. 연결 발판은 이동하고 회전하므로 다음 경로를 살피세요.</span><span class="en">Tap the left or right side of the screen to steer. Connected tiles move and rotate, so watch the route ahead.</span></p>
-    <p><strong class="ko">CLAIM</strong><strong class="en">CLAIM</strong><br><span class="ko">뱀을 조종해 몸통 궤적으로 고리를 만들고 영역을 점유하세요. 과일을 모으고 장애물과 충돌하지 않도록 주의하세요.</span><span class="en">Steer the snake to close loops with its trail and claim territory. Gather fruit and avoid colliding with obstacles.</span></p>
-    <p><strong class="ko">과일과 점수</strong><strong class="en">Fruit and score</strong><br><span class="ko">과일을 모아 점수를 올리고 스킨을 해금하세요. SHIFT에서는 벽과 자신의 몸통을 피하세요.</span><span class="en">Collect fruit for points and skin unlocks. In SHIFT, avoid walls and your own body.</span></p>
-  </div>
-</div></section>
-<section class="help" id="support"><span class="route-alias" id="support-ko"></span><span class="route-alias" id="support-en"></span><div class="wrap help-grid">
-  <div><h2 class="ko">문의가 필요하신가요?</h2><h2 class="en">Need help?</h2><p class="ko">앱 버전, 기기 모델과 OS, 문제가 발생한 순서를 알려주세요. 비밀번호나 인증 코드는 보내지 마세요.</p><p class="en">Include the app version, device model and OS, and the steps that led to the issue. Never send passwords or verification codes.</p><a class="email" href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a></div>
-  <div><h2 class="ko">문의 정보 보관</h2><h2 class="en">Support email retention</h2><p class="ko">문의 내용과 첨부는 회신, 문제 확인, 개인정보 요청 처리에 필요한 범위에서 사용합니다. 문의 종결 또는 회신 완료 후 90일 이내 삭제합니다. 진행 중인 문의와 법령상 보존 자료는 필요한 범위와 기간을 별도로 판단하며, 불필요하거나 민감한 정보는 더 빨리 최소화하거나 삭제합니다.</p><p class="en">Messages and attachments are used as needed to respond, investigate an issue, or handle privacy requests. They are deleted within 90 days after the inquiry is closed or the response is complete. Ongoing inquiries and legally required records are assessed separately. Unnecessary or sensitive information is minimized or deleted sooner.</p></div>
-</div></section>
-<section class="privacy" id="privacy"><span class="route-alias" id="privacy-ko"></span><span class="route-alias" id="privacy-en"></span><span class="route-alias" id="app-ko"></span><span class="route-alias" id="app-en"></span><div class="wrap">
-  <h2 class="ko">웹사이트 개인정보 안내</h2><h2 class="en">Website privacy notice</h2>
-  <p class="ko">사이트 방문과 문의 정보를 어떻게 처리하는지 확인하세요.</p><p class="en">Read how visits and support inquiries are handled.</p>
-  <details id="website-privacy"><summary><span class="ko">웹사이트 개인정보 자세히 보기</span><span class="en">Read the website privacy notice</span></summary>
-  <p class="ko">시행일: 2026-10-20. 이 안내는 SHIFTNAKE 지원 웹사이트 접속과 지원 이메일 문의에 적용됩니다. 운영자는 대한민국 개인 개발자 Hanmin Kim입니다. 개인정보 문의처: <a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>. Android 앱의 정보 처리는 별도의 앱 개인정보처리방침에서 안내합니다.</p>
-  <p class="en">Effective date: October 20, 2026. This notice applies to visits to the SHIFTNAKE support website and support inquiries by email. The operator is Hanmin Kim, an individual developer based in South Korea. Privacy contact: <a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>. The Android app has a separate privacy policy describing its data handling.</p>
-  <p class="ko">이 정적 사이트에는 운영자가 추가한 광고·분석·추적 스크립트, 외부 폰트, 로그인, 입력 폼이 없습니다. 언어·메뉴 선택은 URL 해시만 사용하며 운영자 코드가 쿠키나 브라우저 저장소에 선택값을 저장하지 않습니다. 이 사이트는 게임 계정을 만들거나 게임 저장 데이터를 수집하지 않습니다.</p>
-  <p class="en">This static site has no operator-added ads, analytics or tracking scripts, remote fonts, login, or input forms. Language and menu choices use the URL hash only; operator code does not store those choices in cookies or browser storage. The site creates no game account and collects no game-save data.</p>
-  <p class="ko">웹사이트는 GitHub Pages에서 호스팅됩니다. GitHub 안내에 따르면 GitHub는 로그인 여부와 관계없이 방문자의 IP 주소를 보안 목적으로 기록하고 보관합니다. 운영자는 방문자별 IP 로그를 별도로 수집하거나 조회하는 기능을 구현하지 않았습니다. GitHub의 처리는 GitHub 서비스 약관과 개인정보처리방침을 따르며, 호스팅 제공자의 보유·삭제가 운영자의 지원 이메일 보관 기간과 같다고 보장하지 않습니다.</p>
-  <p class="en">The site is hosted on GitHub Pages. GitHub documentation says visitor IP addresses are logged and stored for security purposes whether or not a visitor is signed in. The operator has not implemented a separate feature to collect or inspect visitor IP logs. GitHub processing is subject to GitHub's service terms and privacy statement; its retention and deletion are not guaranteed to match the operator's support-email retention period.</p>
-  <p class="ko">지원 이메일을 보내면 발신 주소, 문의 내용, 자발적으로 제공한 첨부와 오류 확인에 필요한 기기·OS·앱 버전 등이 처리될 수 있습니다. 목적은 문의 회신, 오류 확인과 개인정보 요청 처리이며 광고·홍보 메일 발송이나 판매 목적으로 사용하지 않습니다. 메일을 보내지 않아도 사이트를 볼 수 있습니다. 회신·조사에 필요한 최소 정보가 없으면 지원이 제한될 수 있습니다. 불필요한 민감정보·아동 개인정보는 보내지 마세요. 아동 관련 문의는 보호자와 함께 진행하고, 불필요한 아동 정보가 포함된 사실을 알게 되면 최소 응대와 신속한 최소화·삭제를 우선합니다.</p>
-  <p class="en">If you email support, your sender address, message, voluntarily supplied attachments, and device, OS, or app-version details needed to investigate may be processed. They are used to reply, investigate issues, or handle privacy requests, not for advertising, promotional mail, or sale. Email is optional. Without the minimum information needed to reply or investigate, support may be limited. Do not send unnecessary sensitive or child information. A parent or guardian should be involved in child-related requests. If unnecessary child information is identified, minimal necessary handling and prompt minimization or deletion take priority.</p>
-  <p class="ko">운영자가 보관하는 지원문의 원문과 첨부는 문의 종결 또는 회신 완료 후 90일 이내 삭제합니다. 진행 중인 문의나 법령상 보존 의무가 있는 자료는 필요한 범위와 기간을 개별 판단합니다. 불필요하거나 민감한 정보는 더 빨리 최소화·삭제합니다. 파기는 해당 문의의 원문·첨부 및 별도 보관 사본을 선별 삭제하고 휴지통 등에 불필요하게 남지 않도록 처리합니다. 90일 기준은 운영자가 보관하는 문의 정보에 관한 것이며 Google·GitHub가 보안·백업·법적 의무로 별도 처리하는 정보가 같은 시점에 모두 삭제된다는 보장은 아닙니다. 제공자 보유기간은 정보 유형, 목적, 계정·서비스 설정과 법적 의무에 따라 달라질 수 있습니다.</p>
-  <p class="en">Support-message originals and attachments held by the operator are deleted within 90 days after the inquiry is closed or the response is complete. Ongoing inquiries and legally required records are assessed individually for the necessary scope and period. Unnecessary or sensitive information is minimized or deleted sooner. Deletion selects the relevant originals, attachments, and separately stored copies and avoids unnecessary remnants in trash folders. The 90-day period covers inquiry information held by the operator; it does not guarantee simultaneous deletion of information Google or GitHub process independently for security, backup, or legal obligations. Provider retention can vary by information type, purpose, account or service settings, and legal obligations.</p>
-  <details><summary><span class="ko">서비스 제공자와 권리</span><span class="en">Providers and your rights</span></summary>
-    <p class="ko">지원 이메일은 Gmail을, 웹 호스팅은 GitHub Pages를 사용합니다. Google과 GitHub는 각자의 약관과 개인정보처리방침에 따라 정보를 처리할 수 있으며 처리 위치와 제공자 보유기간은 달라질 수 있습니다. 운영자는 문의 내용을 광고주의 홍보 목적으로 제공하지 않습니다. Google은 전 세계 서버에서 정보를 처리할 수 있다고 안내하며, GitHub는 미국과 이용자 지역, 계열사·제공자가 운영하는 국가 등에서 처리할 수 있다고 설명합니다. 특정 국가나 경로 하나로 한정된다고 보장하지 않습니다. <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>.</p>
-    <p class="en">Support email uses Gmail and the site is hosted by GitHub Pages. Google and GitHub process information under their respective terms and privacy notices. The operator does not provide inquiries to advertisers for promotion. Google says it may process information on servers worldwide. GitHub describes processing across several locations, including the United States, a visitor's region, and countries where affiliates or providers operate. No single processing country or route is promised. <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/retention?hl=en">Google retention and deletion</a> · <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
-    <p class="ko">앱 개인정보처리방침은 아래 링크에서 확인할 수 있습니다. 광고는 18세 이상을 직접 선택한 이용자에게만 제공하며, 미성년·연령 미확인 이용자는 광고 없이 일반 게임을 이용할 수 있습니다.</p>
-    <p class="en">You or a legally authorized guardian may send access, correction, deletion, suspension, or other requests under applicable law to the support email. Only minimum necessary verification will be requested. Do not send unsolicited identification documents or verification credentials. Provider procedures also apply to information held by providers. The operator limits access to inquiry records and minimizes unnecessary copies but cannot guarantee absolute security or immediate remote deletion of every provider-held copy. If the operator, data items, purposes, retention criteria, or services change, this notice and its effective date will be updated.</p>
-    <p class="ko">본인 또는 적법한 법정대리인은 적용 법령에 따른 열람·정정·삭제·처리정지 등 요청을 지원 이메일로 보낼 수 있습니다. 필요한 최소한의 확인만 요청하며 신분증이나 인증정보를 먼저 보내지 마세요. 외부 제공자가 직접 보유한 정보에는 제공자 절차도 적용됩니다. 운영자는 문의 자료 접근을 필요한 범위로 제한하고 불필요한 사본을 최소화하지만 절대적 보안이나 제공자 보유 사본의 즉시 원격 삭제를 보장하지 않습니다. 운영자·처리 항목·목적·보유 기준·서비스 구성이 바뀌면 이 안내와 시행일을 갱신합니다.</p>
-    <p class="en">Read the app privacy policy using the links below. Ads are provided only after an explicit age-18-or-older choice. Minors and users who do not disclose their age can play ordinary games without ads.</p>
-    <p><a href="https://sleeplesshan.github.io/android/privacy/ko/"><span class="ko">앱 개인정보처리방침 (한국어)</span><span class="en">App privacy policy (Korean)</span></a> · <a href="https://sleeplesshan.github.io/android/privacy/en/">App privacy policy (English)</a></p>
-  </details>
-  </details>
-  <p class="ko">앱 개인정보처리방침</p><p class="en">App privacy policies</p>
-  <p><a href="https://sleeplesshan.github.io/android/privacy/ko/">한국어</a> · <a href="https://sleeplesshan.github.io/android/privacy/en/">English</a></p>
-</div></section>
+  <span class="route-alias" id="home-ko" aria-hidden="true"></span>
+  <span class="route-alias" id="home-en" aria-hidden="true"></span>
+  <section class="wrap mast">
+    <p class="kicker"><span class="ko">Android 지원</span><span class="en">Android support</span></p>
+    <h1 class="logo-plate"><img src="assets/title-wordmark-v1.png" width="1024" height="160" alt="SHIFTNAKE"></h1>
+    <p class="lead ko">움직이는 발판 위에서 뱀을 조종합니다. SHIFT는 발판의 길을 따라가고, CLAIM은 몸통으로 영역을 점유합니다.</p>
+    <p class="lead en">Steer a snake on a moving platform. SHIFT follows the path the platform takes. CLAIM closes a loop with the body and takes the area inside.</p>
+    <dl class="spec">
+      <div>
+        <dt><span class="ko">버전</span><span class="en">Version</span></dt>
+        <dd>1.0.0 <span class="ko">· 버전 코드 25</span><span class="en">· version code 25</span></dd>
+      </div>
+      <div>
+        <dt><span class="ko">패키지</span><span class="en">Package</span></dt>
+        <dd><code>com.sleeplesshan.shiftnake</code></dd>
+      </div>
+      <div>
+        <dt><span class="ko">가격</span><span class="en">Price</span></dt>
+        <dd><span class="ko">무료</span><span class="en">Free</span></dd>
+      </div>
+      <div>
+        <dt><span class="ko">배포</span><span class="en">Distribution</span></dt>
+        <dd>
+          <span class="ko">Google Play 비공개 테스트(Alpha)에 <time class="nowrap" datetime="2026-11-08">2026-11-08 (KST)</time> 제출되어 심사 중입니다. 공개 다운로드는 열려 있지 않습니다.</span>
+          <span class="en">Submitted to Google Play closed testing (Alpha) on <time class="nowrap" datetime="2026-11-08">2026-11-08 KST</time>. It is in review. A public download is not open.</span>
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="band" id="play">
+    <div class="wrap">
+      <h2><span class="ko">플레이</span><span class="en">Play</span></h2>
+      <p class="ko">각 모드에서 하는 일과, 도중에 화면에 나오는 표시입니다.</p>
+      <p class="en">The goal of each mode, and what the game shows while you play.</p>
+      <div class="modes">
+        <article>
+          <h3><img src="assets/mode-shift-wordmark-v1.png" width="512" height="112" alt="SHIFT"></h3>
+          <p class="ko">화면 왼쪽이나 오른쪽을 누르면 진행 방향이 바뀝니다. 발판은 이동하고 회전합니다. 과일을 모으고, 벽과 자신의 몸통은 피합니다. 한손 입력은 설정에서 바꿀 수 있습니다.</p>
+          <p class="en">Tap the left or right side of the screen to turn. The platform moves and rotates. Collect fruit, and avoid walls and your own body. One-handed input can be changed in Settings.</p>
+        </article>
+        <article>
+          <h3><img src="assets/mode-claim-wordmark-v1.png" width="512" height="112" alt="CLAIM"></h3>
+          <p class="ko">몸통이 지나간 궤적으로 고리를 닫으면 그 안을 점유합니다. 과일을 모으고, 장애물과는 부딪히지 않도록 합니다.</p>
+          <p class="en">Close a loop with the trail the body leaves, and the inside is claimed. Collect fruit, and do not run into obstacles.</p>
+        </article>
+      </div>
+      <figure class="screen">
+        <img src="assets/shift-gameplay.jpg" width="640" height="1055" alt="SHIFT 모드 화면 예. 점수, 스테이지, 과일이 보입니다">
+        <figcaption><span class="ko">SHIFT 모드 화면 예.</span><span class="en">An example of the SHIFT board.</span></figcaption>
+      </figure>
+
+      <h3><span class="ko">과일과 도전 과제</span><span class="en">Fruit and challenges</span></h3>
+      <p class="ko">과일은 기기에 저장되는 재화입니다. 도전 과제는 난이도에 따라 과일 50–200개를 줍니다. 아직 받지 않은 보상이 앞에 나옵니다. 받을 보상이 있으면 사과 알림이 보이고, 받으면 수령 애니메이션이 재생됩니다. 과일 팩을 사는 기능은 없습니다.</p>
+      <p class="en">Fruit is currency stored on the device. A challenge pays 50–200 fruit according to its difficulty. Rewards you have not claimed are listed first. An apple alert appears when a reward is ready, and claiming it plays an animation. There is no fruit pack to buy.</p>
+
+      <h3><span class="ko">콤보와 Bank</span><span class="en">Combos and the Bank</span></h3>
+      <p class="ko">콤보가 이어지는 동안 Bank의 합산 배율은 유지됩니다. 2콤보부터는 일부만 찬 캡슐이 남습니다. 가득 차면 캡슐이 합쳐진 뒤 비워지고, 다시 쌓입니다.</p>
+      <p class="en">While a combo continues, the Bank keeps the combined multiplier. From a combo of 2, a partly filled capsule stays. At a full stack the capsules merge, the stack clears, and it begins to fill again.</p>
+      <p class="ko">풀 스택 보너스에서는 몸통이 머리를 포함한 처음 4칸으로 줄어듭니다. 줄어든 부분은 파란색으로 사라집니다.</p>
+      <p class="en">On a full-stack bonus the body shrinks to the original four cells, including the head. The length that goes away vanishes in blue.</p>
+
+      <h3><span class="ko">속도</span><span class="en">Speed</span></h3>
+      <p class="ko">속도에는 상한이 있습니다. 보통은 한 칸에 131ms보다 빨라지지 않고, 황금 풀 스택에서는 한 칸에 116ms보다 빨라지지 않습니다. 일부만 찬 캡슐은 속도를 올리지 않습니다.</p>
+      <p class="en">Speed is capped. Ordinary movement is no faster than one cell per 131 ms. A golden full stack is no faster than one cell per 116 ms. A partial capsule does not add speed.</p>
+
+      <h3><span class="ko">수축 발판</span><span class="en">Shrinking platform</span></h3>
+      <p class="ko">발판이 줄어들 때는 노란색과 검은색 경고가 표시됩니다. 같은 자리를 반복해 지키는 것으로 점수를 계속 더할 수는 없습니다.</p>
+      <p class="en">A shrinking platform shows a yellow and black warning. Holding the same spot over and over does not keep adding score.</p>
+
+      <h3><span class="ko">화면의 콤보 안내</span><span class="en">Combo notices</span></h3>
+      <p class="ko">콤보 안내는 2콤보부터 나옵니다. 풀 스택일 때는 별도의 안내가 나옵니다. 10콤보부터는 숫자에 빛이 들어옵니다.</p>
+      <p class="en">Combo text appears from a combo of 2. A full stack has its own notice. From a combo of 10 the number glows.</p>
+
+      <h3><span class="ko">저장, 결제, 광고</span><span class="en">Saves, payments, ads</span></h3>
+      <p class="ko">진행, 과일, 설정은 기기에 저장됩니다. 계정 로그인과 클라우드 저장은 없습니다. 앱 데이터를 지우거나 앱을 제거하면 그 기기의 진행을 잃을 수 있습니다. 운영체제가 제공하는 백업은 기기 설정을 따릅니다.</p>
+      <p class="en">Progress, fruit, and settings are stored on the device. There is no account login and no cloud save. Clearing the app’s data or uninstalling it can erase that device’s progress. Backup offered by the operating system follows the device’s own settings.</p>
+      <p class="ko">인앱 결제와 광고 제거 상품은 없습니다. 이번 비공개 테스트 제출본의 광고는 테스트 광고입니다. 연령에 따른 광고 여부와 선택 방법은 앱 개인정보처리방침에 있습니다.</p>
+      <p class="en">There are no in-app purchases and no product that removes ads. Ads in the build submitted for this closed test are test ads. Whether ads are shown, and the choices around them, are set out in the app privacy policy.</p>
+    </div>
+  </section>
+
+  <section class="band" id="support">
+    <span class="route-alias" id="support-ko" aria-hidden="true"></span>
+    <span class="route-alias" id="support-en" aria-hidden="true"></span>
+    <div class="wrap">
+      <h2><span class="ko">지원</span><span class="en">Support</span></h2>
+      <p class="ko">앱 버전, 기기 모델과 OS, 문제가 생긴 순서를 적어 주세요. 비밀번호, 인증 코드, 신분증, 불필요한 아동 정보는 보내지 마세요.</p>
+      <p class="en">Include the app version, the device model and OS, and the steps that led to the problem. Do not send passwords, verification codes, identity documents, or unnecessary information about a child.</p>
+      <a class="email" href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>
+      <p class="ko">운영자가 보관하는 문의와 첨부는 문의가 끝나거나 회신을 마친 뒤 90일 이내에 삭제합니다. 기준의 전문은 아래 안내에 있습니다.</p>
+      <p class="en">Messages and attachments kept by the operator are deleted within 90 days after the inquiry is closed or the reply is finished. The full rule is in the notice below.</p>
+    </div>
+  </section>
+
+  <section class="band" id="privacy">
+    <span class="route-alias" id="privacy-ko" aria-hidden="true"></span>
+    <span class="route-alias" id="privacy-en" aria-hidden="true"></span>
+    <span class="route-alias" id="app-ko" aria-hidden="true"></span>
+    <span class="route-alias" id="app-en" aria-hidden="true"></span>
+    <div class="wrap notice">
+      <h2><span class="ko">웹사이트 개인정보 안내</span><span class="en">Website privacy notice</span></h2>
+      <p class="ko">사이트 방문과 문의 정보를 어떻게 처리하는지 확인하세요.</p>
+      <p class="en">Read how visits and support inquiries are handled.</p>
+      <details id="website-privacy">
+        <summary><span class="ko">웹사이트 개인정보 자세히 보기</span><span class="en">Read the website privacy notice</span></summary>
+        <p class="ko">시행일: 2026-10-20. 이 안내는 SHIFTNAKE 지원 웹사이트 접속과 지원 이메일 문의에 적용됩니다. 운영자는 대한민국 개인 개발자 Hanmin Kim입니다. 개인정보 문의처: <a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>. Android 앱의 정보 처리는 별도의 앱 개인정보처리방침에서 안내합니다.</p>
+        <p class="en">Effective date: October 20, 2026. This notice applies to visits to the SHIFTNAKE support website and support inquiries by email. The operator is Hanmin Kim, an individual developer based in South Korea. Privacy contact: <a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>. The Android app has a separate privacy policy describing its data handling.</p>
+        <p class="ko">이 정적 사이트에는 운영자가 추가한 광고·분석·추적 스크립트, 외부 폰트, 로그인, 입력 폼이 없습니다. 언어·메뉴 선택은 URL 해시만 사용하며 운영자 코드가 쿠키나 브라우저 저장소에 선택값을 저장하지 않습니다. 이 사이트는 게임 계정을 만들거나 게임 저장 데이터를 수집하지 않습니다.</p>
+        <p class="en">This static site has no operator-added ads, analytics or tracking scripts, remote fonts, login, or input forms. Language and menu choices use the URL hash only; operator code does not store those choices in cookies or browser storage. The site creates no game account and collects no game-save data.</p>
+        <p class="ko">웹사이트는 GitHub Pages에서 호스팅됩니다. GitHub 안내에 따르면 GitHub는 로그인 여부와 관계없이 방문자의 IP 주소를 보안 목적으로 기록하고 보관합니다. 운영자는 방문자별 IP 로그를 별도로 수집하거나 조회하는 기능을 구현하지 않았습니다. GitHub의 처리는 GitHub 서비스 약관과 개인정보처리방침을 따르며, 호스팅 제공자의 보유·삭제가 운영자의 지원 이메일 보관 기간과 같다고 보장하지 않습니다.</p>
+        <p class="en">The site is hosted on GitHub Pages. GitHub documentation says visitor IP addresses are logged and stored for security purposes whether or not a visitor is signed in. The operator has not implemented a separate feature to collect or inspect visitor IP logs. GitHub processing is subject to GitHub's service terms and privacy statement; its retention and deletion are not guaranteed to match the operator's support-email retention period.</p>
+        <p class="ko">지원 이메일을 보내면 발신 주소, 문의 내용, 자발적으로 제공한 첨부와 오류 확인에 필요한 기기·OS·앱 버전 등이 처리될 수 있습니다. 목적은 문의 회신, 오류 확인과 개인정보 요청 처리이며 광고·홍보 메일 발송이나 판매 목적으로 사용하지 않습니다. 메일을 보내지 않아도 사이트를 볼 수 있습니다. 회신·조사에 필요한 최소 정보가 없으면 지원이 제한될 수 있습니다. 불필요한 민감정보·아동 개인정보는 보내지 마세요. 아동 관련 문의는 보호자와 함께 진행하고, 불필요한 아동 정보가 포함된 사실을 알게 되면 최소 응대와 신속한 최소화·삭제를 우선합니다.</p>
+        <p class="en">If you email support, your sender address, message, voluntarily supplied attachments, and device, OS, or app-version details needed to investigate may be processed. They are used to reply, investigate issues, or handle privacy requests, not for advertising, promotional mail, or sale. Email is optional. Without the minimum information needed to reply or investigate, support may be limited. Do not send unnecessary sensitive or child information. A parent or guardian should be involved in child-related requests. If unnecessary child information is identified, minimal necessary handling and prompt minimization or deletion take priority.</p>
+        <p class="ko">운영자가 보관하는 지원문의 원문과 첨부는 문의 종결 또는 회신 완료 후 90일 이내 삭제합니다. 진행 중인 문의나 법령상 보존 의무가 있는 자료는 필요한 범위와 기간을 개별 판단합니다. 불필요하거나 민감한 정보는 더 빨리 최소화·삭제합니다. 파기는 해당 문의의 원문·첨부 및 별도 보관 사본을 선별 삭제하고 휴지통 등에 불필요하게 남지 않도록 처리합니다. 90일 기준은 운영자가 보관하는 문의 정보에 관한 것이며 Google·GitHub가 보안·백업·법적 의무로 별도 처리하는 정보가 같은 시점에 모두 삭제된다는 보장은 아닙니다. 제공자 보유기간은 정보 유형, 목적, 계정·서비스 설정과 법적 의무에 따라 달라질 수 있습니다.</p>
+        <p class="en">Support-message originals and attachments held by the operator are deleted within 90 days after the inquiry is closed or the response is complete. Ongoing inquiries and legally required records are assessed individually for the necessary scope and period. Unnecessary or sensitive information is minimized or deleted sooner. Deletion selects the relevant originals, attachments, and separately stored copies and avoids unnecessary remnants in trash folders. The 90-day period covers inquiry information held by the operator; it does not guarantee simultaneous deletion of information Google or GitHub process independently for security, backup, or legal obligations. Provider retention can vary by information type, purpose, account or service settings, and legal obligations.</p>
+        <details>
+          <summary><span class="ko">서비스 제공자와 권리</span><span class="en">Providers and your rights</span></summary>
+          <p class="ko">지원 이메일은 Gmail을, 웹 호스팅은 GitHub Pages를 사용합니다. Google과 GitHub는 각자의 약관과 개인정보처리방침에 따라 정보를 처리할 수 있으며 처리 위치와 제공자 보유기간은 달라질 수 있습니다. 운영자는 문의 내용을 광고주의 홍보 목적으로 제공하지 않습니다. Google은 전 세계 서버에서 정보를 처리할 수 있다고 안내하며, GitHub는 미국과 이용자 지역, 계열사·제공자가 운영하는 국가 등에서 처리할 수 있다고 설명합니다. 특정 국가나 경로 하나로 한정된다고 보장하지 않습니다. <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>.</p>
+          <p class="en">Support email uses Gmail and the site is hosted by GitHub Pages. Google and GitHub process information under their respective terms and privacy notices. The operator does not provide inquiries to advertisers for promotion. Google says it may process information on servers worldwide. GitHub describes processing across several locations, including the United States, a visitor's region, and countries where affiliates or providers operate. No single processing country or route is promised. <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/retention?hl=en">Google retention and deletion</a> · <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+          <p class="ko">앱의 연령 선택, 광고, 기기 내 저장은 앱 개인정보처리방침에서 설명합니다. 이 웹사이트 안내는 그 내용을 다시 적지 않습니다. 2026-11-08 정정.</p>
+          <p class="en">Age choices, advertising, and on-device saves are described in the app privacy policy. This website notice does not restate them. Corrected 2026-11-08.</p>
+          <p class="ko">본인 또는 적법한 법정대리인은 적용 법령에 따른 열람·정정·삭제·처리정지 등 요청을 지원 이메일로 보낼 수 있습니다. 필요한 최소한의 확인만 요청하며 신분증이나 인증정보를 먼저 보내지 마세요. 외부 제공자가 직접 보유한 정보에는 제공자 절차도 적용됩니다. 운영자는 문의 자료 접근을 필요한 범위로 제한하고 불필요한 사본을 최소화하지만 절대적 보안이나 제공자 보유 사본의 즉시 원격 삭제를 보장하지 않습니다. 운영자·처리 항목·목적·보유 기준·서비스 구성이 바뀌면 이 안내와 시행일을 갱신합니다.</p>
+          <p class="en">You or a legally authorized guardian may send access, correction, deletion, suspension, or other requests under applicable law to the support email. Only minimum necessary verification will be requested. Do not send unsolicited identification documents or verification credentials. Provider procedures also apply to information held by providers. The operator limits access to inquiry records and minimizes unnecessary copies but cannot guarantee absolute security or immediate remote deletion of every provider-held copy. If the operator, data items, purposes, retention criteria, or services change, this notice and its effective date will be updated.</p>
+          <p><a href="https://sleeplesshan.github.io/android/privacy/ko/"><span class="ko">앱 개인정보처리방침 (한국어)</span><span class="en">App privacy policy (Korean)</span></a> · <a href="https://sleeplesshan.github.io/android/privacy/en/">App privacy policy (English)</a></p>
+        </details>
+      </details>
+      <p class="ko">앱 개인정보처리방침</p>
+      <p class="en">App privacy policies</p>
+      <p><a href="https://sleeplesshan.github.io/android/privacy/ko/">한국어</a> · <a href="https://sleeplesshan.github.io/android/privacy/en/">English</a></p>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap footer"><span>© 2026 Hanmin Kim · SHIFTNAKE</span><a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a><span class="ko">Google Play 출시 준비 중</span><span class="en">Preparing for Google Play</span></div></footer>
-<script>
-const languageButton = document.querySelector('.language');
-function applyLanguage(isEnglish) {
-  document.body.classList.toggle('english', isEnglish);
-  document.documentElement.lang = isEnglish ? 'en' : 'ko';
-  document.title = isEnglish ? 'SHIFTNAKE | Play and support' : 'SHIFTNAKE | 플레이 안내와 지원';
-  languageButton.textContent = isEnglish ? '한국어' : 'EN';
-  languageButton.setAttribute('aria-label', isEnglish ? 'Switch to Korean' : 'Switch to English');
-  document.querySelector('.screen img').alt = isEnglish ? 'Actual gameplay from SHIFT mode' : 'SHIFT 모드 실제 플레이 화면';
-}
-function applyRoute() {
-  const hash = location.hash;
-  if (/-en$/.test(hash)) applyLanguage(true);
-  else if (/-ko$/.test(hash)) applyLanguage(false);
-  if (/^#(privacy|app)(-|$)/.test(hash)) document.querySelector('#website-privacy').open = true;
-}
-languageButton.addEventListener('click', () => {
-  const isEnglish = !document.body.classList.contains('english');
-  applyLanguage(isEnglish);
-  const section = /^#(home|support|privacy|app)(?:-|$)/.exec(location.hash)?.[1] || 'home';
-  history.replaceState(null, '', '#' + section + (isEnglish ? '-en' : '-ko'));
-});
-window.addEventListener('hashchange', applyRoute);
-applyRoute();
-</script>
+<footer>
+  <div class="wrap footer">
+    <span>© 2026 Hanmin Kim · SHIFTNAKE</span>
+    <a href="mailto:sleeplesshan@gmail.com">sleeplesshan@gmail.com</a>
+    <span><a href="https://sleeplesshan.github.io/android/privacy/ko/">개인정보처리방침</a> · <a href="https://sleeplesshan.github.io/android/privacy/en/">Privacy policy</a></span>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
