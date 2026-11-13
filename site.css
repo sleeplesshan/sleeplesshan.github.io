@@ -142,6 +142,7 @@ nav a:hover { text-decoration: underline; }
 main { padding-bottom: 1rem; }
 
 section,
+h3,
 .route-alias { scroll-margin-top: 5.5rem; }
 
 .route-alias {
@@ -187,6 +188,13 @@ h3 {
   margin: 0;
   font-size: 1.125rem;
   line-height: 1.65;
+}
+
+.notes {
+  max-width: 40rem;
+  margin: 1.75rem 0 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--line);
 }
 
 p { margin: 0 0 1rem; }
