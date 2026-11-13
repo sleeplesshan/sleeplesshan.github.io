@@ -32,7 +32,7 @@
     var isEnglish = !document.body.classList.contains("english");
     applyLanguage(isEnglish);
     var section = "home";
-    var match = /^#(home|support|privacy|app|play|worlds|clear|gems|classic|controls|ranking)(?:-|$)/.exec(location.hash);
+    var match = /^#(home|support|privacy|app|play|release|worlds|clear|gems|classic|added|controls|ranking)(?:-|$)/.exec(location.hash);
     if (match) section = match[1];
     history.replaceState(null, "", "#" + section + (isEnglish ? "-en" : "-ko"));
   });
