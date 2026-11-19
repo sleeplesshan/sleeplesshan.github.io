@@ -139,6 +139,20 @@ nav a:hover { text-decoration: underline; }
 
 .language:hover { border-color: var(--ink); }
 
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.language-switch .language { min-width: 3.5rem; padding: 0 0.7rem; }
+
+.language[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
 main { padding-bottom: 1rem; }
 
 section,
@@ -320,9 +334,24 @@ body.english .ko { display: none; }
 
 body.english .en { display: revert; }
 
+.ja { display: none; }
+
+body.japanese .ko { display: none; }
+
+body.japanese .ja { display: revert; }
+
+html:lang(ja) {
+  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", Meiryo, sans-serif;
+}
+
+:lang(ja) {
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
 @media (max-width: 720px) {
   .wrap { width: min(calc(100% - 2rem), var(--page)); }
-  .language { order: 2; }
+  .language-switch { order: 2; }
   nav { order: 3; flex-basis: 100%; }
   .modes { grid-template-columns: 1fr; row-gap: 2rem; }
   .modes article + article {
